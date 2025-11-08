@@ -26,16 +26,23 @@ body{
     color:var(--prune);
     font-weight:700
 }
-nav a{
-    margin-left:14px;
-    text-decoration:none;
-    color:var(--prune)
+nav a {
+  margin-left: 14px;
+  text-decoration: none;
+  color: var(--prune);
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
+
+nav a:hover {
+  color: var(--dore);
+}
+
 .hero{
     display:flex;
-    gap:18px;
+    gap: 30px;
     align-items:center;
-    padding:30px 0
+    padding:60px 0
 }
 .portrait{
     width:160px;
@@ -55,11 +62,13 @@ nav a{
 @media(max-width:760px){
   .hero{flex-direction:column;text-align:center}
   .portrait{width:140px;height:140px}
+  .btn { margin: 0 auto;}
 }
-img {
+img: :hover{
     width: 300px;
     border-radius: 10px;
     margin: 20px 0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     transition: transform 0.4s ease;
+    transform: scale(1.05);
 }
